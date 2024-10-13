@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <main>
+        <section id="logo">
+            <img src="./assets/logo.svg" alt="Lista de compras logo" class="logo">
+        </section>
+
+        <header id="title">
+            <span><img src="./assets/icons/seta-esquerda.png" alt="">Voltar</span>
+            <h1>Compras da semana</h1>
+        </header>
+
+        <section>
+            <form>
+                <fieldset>
+                    <input 
+                        type="text"
+                        id="itemName"
+                        name="itemName"
+                        placeholder="Adicione um novo item"
+                        required
+                    >
+                </fieldset>
+
+                <button type="submit">Adicionar item</button>
+            </form>
+        </section>
+
+        <ul>
+            <!--
+            <li class="list">
+                <div class="left-group">
+                    <label class="radio-image">
+                        <input type="checkbox" class="radio-checkbox">
+                    </label>
+                    <span>Pão de forma</span>
+                </div>
+                <img src="./assets/icons/Frame-3.png" alt="" class="remove-icon">
+            </li>           -->
+        </ul>
+
+        <section id="alert">
+            <span><img src="./assets/icons/warning-circle-filled.png" alt="">
+            O item foi removido da lista</span>
+           <!-- <img src="./assets/icons/delete-small.png" alt="" class="remove-alert">-->
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

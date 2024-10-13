@@ -1,0 +1,24 @@
+#title{
+display: flex;
+flex-direction: column;
+gap: 16px;
+justify-content: center;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    span{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font: var(--link);
+        color: var(--color-brand);
+    }
+
+    h1{
+        font: var(--title);
+        color: (--content-primary);
+    }
+}

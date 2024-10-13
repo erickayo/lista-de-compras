@@ -1,0 +1,49 @@
+.list{
+    background-color: var(--bg-secondary);
+    width: 100%;
+    height: 49px;
+    padding: 10px 12px;
+    border-radius: 12px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font: var(--paragraph);
+    color: var(--content-secondary);
+    align-items: center;
+
+    .left-group{
+        display: flex;
+        gap: 12px;
+    }
+
+    .radio-image{
+        background-image: url(/assets/checkbox/state=Default.svg);
+        width: 17px;
+        height: 17px;
+    }
+
+    &:hover, &:focus-within{
+        border: 1px solid var(--border-hover);
+        background-color: var(--bg-secondary);
+
+        & .radio-image{
+            background-image: url(/assets/checkbox/state=hover.svg);
+            width: 17px;
+            height: 17px;
+        }
+    }
+    
+    &:has(:checked){
+        border: 2px solid var(--color-brand);
+
+        & .radio-image{
+            background-image: url(/assets/checkbox/state=selected.svg);
+        }
+    }
+}
+
+.radio-checkbox {
+    display: none;
+}
